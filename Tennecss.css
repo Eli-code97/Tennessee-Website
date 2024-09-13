@@ -33,6 +33,8 @@ header {
 #impos {
     position: relative;
     right: 10px;
+    width: 25vh;
+    height:15vh
 }
 
 .author {
