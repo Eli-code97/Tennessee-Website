@@ -14,7 +14,9 @@
 
     <body>
         <header>
-            <img src="images/TennesseMap.jpg">
+            <img id="impos" src="images/TennesseMap.jpg">
+            <cite id="citeloc">Picture by Peter Hermes Furian</cite>
+
             <h1 class="titlefloat">Home</h1>
             <p class="author">Elijah Muhammad</p>
 
@@ -24,10 +26,10 @@
             <div>
                 <ul class="navlink">
                     <li><img src="images/TN.png"></li>
-                    <li><a href="Tennesseehome.html">home</a></li>
-                    <li><a href="Nashville.html">Nashville</a></li>
-                    <li><a href="Franklin.html">Franklin</a></li>
-                    <li><a href="Chattanooga.html">Chattanooga</a></li>
+                    <li><a href="Tennesseehome.html" target="_blank">home</a></li>
+                    <li><a href="Nashville.html" target="_blank">Nashville</a></li>
+                    <li><a href="Franklin.html" target="_blank">Franklin</a></li>
+                    <li><a href="Chattanooga.html" target="_blank">Chattanooga</a></li>
                 </ul>
             </div>
         </nav>
@@ -96,14 +98,27 @@
                 </tr>
 
             </table>
-            <p>
-                For more information on Tennessee, go to <a class="exlink">https://www.tn.gov</a>
-                <form>
-                    <label for="question">questions</label>
-                    <input id="SubmitBox" name="Questions" type="text">
-                    <button id="submit"> Submit question</button>
-                </form>
-            </p>
+            <p>For more information on Tennessee, go to <a href="https://www.tn.gov" class="exlink" target="_blank" rel="noopener noreferrer">The Tennessee government website</a></p>
+        <form>
+
+            <div>
+                <label for="firstName">First name:</label>
+                <input id="firstName" name="firstName" type="text" placeholder="first name">
+            </div>
+
+            <div>
+                <label for="lastName">Last name:</label>
+                <input id="lastName" name="lastName" type="text" placeholder="Last name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" name="Email" type="text" placeholder="Email">
+                <span id="inValid"></span>
+                <button onclick="validateEmail()" type="button">Submit</button>
+            </div>
+
+        </form>
         </footer>
-    </body>
     <script src="Tennesscript.js"></script>
+    </body>
