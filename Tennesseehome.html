@@ -114,8 +114,19 @@
             <div>
                 <label for="email">Email:</label>
                 <input id="email" name="Email" type="text" placeholder="Email">
+
+                <input id="emailV" name="Email verification" type="text" placeholder="Email verification">
+
                 <span id="inValid"></span>
+                <span id="Match"></span>
+
                 <button onclick="validateEmail()" type="button">Submit</button>
+            </div>
+
+            <div>
+                <label for="questions">
+                <input id="questions" name="questions" type="text" placeholder="questions">
+                <button onclick="questlog()" type="button">Submit question</button>
             </div>
 
         </form>
